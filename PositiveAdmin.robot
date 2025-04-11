@@ -52,22 +52,22 @@ Profile
     Click Element    id=profile-btn 
 
 *** Test Cases ***
-TCI001-Login Admin
+TCI001-เข้าสู่ระบบผู้ดูแลระบบ
     Login Admin
     [Teardown]    Close Browser
 
-TCI002-Dashboard Admin
+TCI002-ดูหน้าแดชบอร์ด
     Login Admin
     DashboardAdmin
     [Teardown]    Close Browser
 
-TCI003-Profile Admin
+TCI003-ดูข้อมูลส่วนตัวบัญชีผู้ดูแล
     Login Admin
     DashboardAdmin
     Profile
     [Teardown]    Close Browser
 
-TCI004-Edir-Profile
+TCI004-แก้ไขข้อมูลส่วนตัวของผู้ดูแลระบบ
     Login Admin
     DashboardAdmin
     Profile
@@ -81,7 +81,7 @@ TCI004-Edir-Profile
     Click Element    id=save-btn
     [Teardown]    Close Browser
 
-TCI005-Status-Active
+TCI005-ดูจำนวนผู้ค้าที่ได้รับสถานะ
     Login Admin
     DashboardAdmin
 
@@ -92,7 +92,7 @@ TCI005-Status-Active
     Click Element    id=active-filter
     [Teardown]    Close Browser
 
-TCI006-Status-InActive
+TCI006-ดูจำนวนผู้ค้าที่ยังไม่ได้รับสถานะ
     Login Admin
     DashboardAdmin
 
@@ -103,7 +103,7 @@ TCI006-Status-InActive
     Click Element    id=inactive-filter
     [Teardown]    Close Browser
 
-TCI007-Status-All
+TCI007-ดูจำนวนผู้ค้าที่หมดอายุ
     Login Admin
     DashboardAdmin
 
@@ -111,7 +111,7 @@ TCI007-Status-All
     Click Element    id=view-all-btn-จำนวนผู้ค้าที่หมดอายุ
     [Teardown]    Close Browser
 
-TCI008-Search-User
+TCI008-ค้นหารายชื่อผู้ค้าตราสารหนี้ที่หน้าแดชบอร์ด
     Login Admin
     DashboardAdmin
 
@@ -120,7 +120,7 @@ TCI008-Search-User
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI009-Detall-User
+TCI009-ดูรายละเอียดข้อมูลของผู้ค้าตราสารหนี้
     Login Admin
     DashboardAdmin
 
@@ -129,7 +129,7 @@ TCI009-Detall-User
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI010-Show-User
+TCI010-ดูหน้าผู้ค้าตราสารหนี้
     Login Admin
     DashboardAdmin
 
@@ -137,7 +137,7 @@ TCI010-Show-User
     Click Element    id=traders-link
     [Teardown]    Close Browser
 
-TCI011-Edit-User
+TCI011-แก้ไขสถานะของผู้ค้าตราสารหนี้
     Login Admin
     DashboardAdmin
 
@@ -162,14 +162,14 @@ TCI011-Edit-User
     Sleep    5s
     [Teardown]    Close Browser
 
-TCI012-Course
+TCI012-ดูหน้าจัดการคอร์ส
     Login Admin
     DashboardAdmin
 
     Wait Until Element Is Visible    id=courses-link
     Click Element    id=courses-link
 
-TCI013-Add-Course
+TCI013-เพิ่มคอร์ส
     Login Admin
     DashboardAdmin
 
@@ -193,7 +193,7 @@ TCI013-Add-Course
     Wait Until Element Is Visible    id=upload-btn-upload-popup
     Click Element    id=upload-btn-upload-popup
 
-TCI014-Filter-Course
+TCI014-ดูตัวกรองการจัดการคอร์ส
     Login Admin
     DashboardAdmin
 
@@ -211,7 +211,7 @@ TCI014-Filter-Course
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI015-Latest-Course
+TCI015-ดูคอร์สที่เพิ่มมาล่าสุด
     Login Admin
     DashboardAdmin
 
@@ -220,7 +220,7 @@ TCI015-Latest-Course
 
     [Teardown]    Close Browser
 
-TCI016-Popular-Course
+TCI016-ดูคอร์สที่ยอดนิยม
     Login Admin
     DashboardAdmin
 
@@ -230,7 +230,7 @@ TCI016-Popular-Course
     Click Element    id=tab-popular
     [Teardown]    Close Browser
 
-TCI017-Upcoming-Course
+TCI017-ดูคอร์สที่กำลังจะเริ่มต้นการสอน
     Login Admin
     DashboardAdmin
 
@@ -240,7 +240,7 @@ TCI017-Upcoming-Course
     Click Element    id=tab-upcoming
     [Teardown]    Close Browser
 
-TCI018-Delete-Course
+TCI018-ลบคอร์ส
     Login Admin
     DashboardAdmin
     Wait Until Element Is Visible    id=courses-link
@@ -253,7 +253,7 @@ TCI018-Delete-Course
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
     [Teardown]    Close Browser
 
-TCI019-Search-Course
+TCI019-ค้นหาคอร์ส
     Login Admin
     DashboardAdmin
     Wait Until Element Is Visible    id=courses-link
@@ -264,7 +264,7 @@ TCI019-Search-Course
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI020-schedule
+TCI020-ดูหน้าตารางอบรม
     Login Admin
     DashboardAdmin
 
@@ -272,7 +272,7 @@ TCI020-schedule
     Click Element    id=schedule-link
     [Teardown]    Close Browser
 
-TCI021-Search-schedule
+TCI021-ค้นหาหลักเพื่อดูตารางอบรม
     Login Admin
     DashboardAdmin
 
@@ -283,7 +283,7 @@ TCI021-Search-schedule
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI022-User-schedule
+TCI022-ดูรายชื่อผู้สมัครของคอร์ส
     Login Admin
     DashboardAdmin
 
@@ -295,7 +295,7 @@ TCI022-User-schedule
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI023-Check-User-schedule
+TCI023-เช็คชื่อตรวจสอบการเข้าอบรม
     Login Admin
     DashboardAdmin
 
@@ -313,7 +313,7 @@ TCI023-Check-User-schedule
     Sleep    3s
     [Teardown]    Close Browser
 
-TCI024-Logout
+TCI024-ออกจากระบบ
     Login Admin
     DashboardAdmin
 

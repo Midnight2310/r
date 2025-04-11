@@ -116,16 +116,16 @@ Homepage
     Sleep    3s 
 
 *** Test Cases ***
-TC001-SignupD
+TCI001-การสมัครสมาชิก(ข้อมูลไม่ครบ)
     SignupDuplicate
 
-TC002-SignupI
+TCI002-การสมัครสมาชิก(ข้อมูลซ้ำ)
     SignupIncomplete
 
-TC003-LogInI
+TCI003-เข้าสู่ระบบของผูู้ค้าตราสารหนี้
     LogInI
 
-TC004-upload-profile
+TCI004-แก้ไขข้อมูลโปรไฟล์
     LogIn
     Homepage
     Profile
@@ -147,7 +147,7 @@ TC004-upload-profile
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
     [Teardown]    Close Browser
 
-TC005-Change-Password
+TCI005-เปลี่ยนรหัสผ่าน
     LogIn
     Homepage
     Profile
@@ -165,7 +165,7 @@ TC005-Change-Password
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
     [Teardown]    Close Browser
 
-TC006-Course-Time
+TCI006-ลงทะเบียนคอร์ส(ที่นั่งเต็ม)
     LogIn
     Homepage
     Profile

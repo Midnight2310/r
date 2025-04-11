@@ -71,19 +71,19 @@ Profile
     Click Element    xpath=//*[@id="user-menu-btn"]
 
 *** Test Cases ***
-TC001-Signup
+TCI001-การสมัครสมาชิก
     Signup
 
-TC002-logIn
+TCI002-เข้าสู่ระบบผู้ค้าตราสารหนี้
     LogIn
 
-TC003-User-Profile
+TCI003-โปรไฟล์
     LogIn
     Homepage
     Profile
     [Teardown]    Close Browser
 
-TC004-Edit-Profile
+TCI004-แก้ไขข้อมูลโปรไฟล์
     LogIn
     Homepage
     Profile
@@ -101,7 +101,7 @@ TC004-Edit-Profile
     Click Element    id=save-profile-btn
     [Teardown]    Close Browser
 
-TC005-Change-Pass
+TCI005-เปลี่ยนรหัสผ่าน
     LogIn
     Homepage
     Profile
@@ -119,7 +119,7 @@ TC005-Change-Pass
     Element Should Contain    xpath=//h2[contains(@class, 'swal2-title')]    สำเร็จ
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
 
-TC006-Course
+TCI006-หลักสูตรของฉัน
     LogIn
     Homepage
     Profile
@@ -129,7 +129,7 @@ TC006-Course
     Wait Until Element Is Visible    id=my-courses-link
     Click Element    id=my-courses-link
 
-TC007-assign-course
+TCI007-ลงทะเบียนคอร์ส
     LogIn
     Homepage
 
@@ -142,7 +142,7 @@ TC007-assign-course
     Element Should Contain    xpath=//h2[contains(@class, 'swal2-title')]    ลงทะเบียนสำเร็จ
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
 
-TC-008-start-course
+TCI-008-เริ่มเรียน
     LogIn
     Homepage
 
@@ -152,7 +152,7 @@ TC-008-start-course
     Click Element    id=start-learning-btn
     [Teardown]    Close Browser
 
-TC_009-Cancel-Course
+TCI_009-ยกเลิกการลงทะเบียน
     LogIn
     Homepage
 
@@ -170,12 +170,27 @@ TC_009-Cancel-Course
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
     [Teardown]    Close Browser
 
-TC010-Roadmap
+TCI010-ตารางอบรม
     LogIn
     Homepage
     Click Element    id=user-nav-link-schedule
 
-TC011-Logout
+TCI011-ดาว์นโหลดใบรับรอง
+    LogIn
+    Homepage
+    Profile
+
+    Wait Until Element Is Visible    xpath=//*[@id="profile-btn"]
+    Click Element    xpath=//*[@id="profile-btn"]
+
+    Wait Until Element Is Visible   id=my-courses-link
+    Click Element   id=my-courses-link
+
+    Wait Until Element Is Visible    id=download-certificate-btn-0
+    Click Element    id=download-certificate-btn-0
+    [Teardown]    Close Browser
+
+TCI012-ออกจากระบบ
     LogIn
     Homepage
     Profile

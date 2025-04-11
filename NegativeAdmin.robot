@@ -94,15 +94,15 @@ DashboardAdmin
 
 
 *** Test Cases ***
-TC001-LogFail
+TCI001-เข้าสู่ระบบผู้ดูแลระบบกรณีใช้ email ผิด
     Login Admin Fail
     [Teardown]    Close Browser
 
-TC002-LogInvalid
+TCI002-เข้าสู่ระบบผู้ดูแลระบบกรณีกรอกข้อมูลไม่ครบ
     Login Admin invalid
     [Teardown]    Close Browser
 
-TC003-Add-Course
+TCI003-เพิ่มคอร์สกรณีที่ใส่ข้อมูลคอร์สไม่ครบ
 
     Login Admin
     DashboardAdmin
