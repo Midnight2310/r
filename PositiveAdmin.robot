@@ -44,7 +44,7 @@ Login Admin
 
 DashboardAdmin
     Go To    http://localhost:5173/AdminDashboard
-    Sleep    3s
+    Sleep    2s
 
 Profile
     Wait Until Element Is Visible    id=user-menu-btn
@@ -141,10 +141,10 @@ TCI013-เพิ่มคอร์ส
     Wait Until Element Is Visible    id=add-course-btn
     Click Element    id=add-course-btn
 
-    Input Text    id=title-upload-popup    Financi
-    Input Text    id=description-upload-popup    Financia
-    Input Text    id=details-upload-popup    test5
-    Input Text    id=trainingLocation-upload-popup    test5
+    Input Text    id=title-upload-popup    Financials
+    Input Text    id=description-upload-popup    Financials
+    Input Text    id=details-upload-popup    test
+    Input Text    id=trainingLocation-upload-popup    test
     Input Text    id=duration_hours-upload-popup    1
     Input Text    id=max_seats-upload-popup    20
     Input Text    id=start_date-upload-popup    10102025
@@ -154,10 +154,10 @@ TCI013-เพิ่มคอร์ส
 
     Wait Until Element Is Visible    id=upload-btn-upload-popup
     Click Element    id=upload-btn-upload-popup
-
+    Sleep    3s
     Wait Until Element Is Visible    id=cancel-btn-upload-popup
     Click Element    id=cancel-btn-upload-popup
-
+    
 TCI014-ดูตัวกรองการจัดการคอร์ส
 
     Wait Until Element Is Visible    id=filter-toggle

@@ -26,7 +26,7 @@ Signup
     Click Element    id=signup-btn
     Input Text    id=name-input    Phattarapong Uknowme
     Input Text    id=company-input    Uknowme Asset
-    Input Text    id=citizen-id-input    1429900959467
+    Input Text    id=citizen-id-input    1429900979467
     Input Text    id=email-input    phattarapong34467@gmail.com
     Input Text    id=phone-input    0966566467
     Wait Until Element Is Visible    id=submit-signup-btn
@@ -67,7 +67,7 @@ LogIn
 
 Homepage
     Go To    http://localhost:5173/UserHomepage
-    Sleep    5s 
+    Sleep    2s 
 
 Profile
     Wait Until Element Is Visible    id=user-menu-btn

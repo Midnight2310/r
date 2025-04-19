@@ -43,7 +43,7 @@ SignIn-Privatekey
     Capture Step Screenshot    admin_login_success
 
     Go To    http://localhost:5173/AdminDashboard
-    Sleep    3s
+    Sleep    2s
 
     Wait Until Element Is Visible    id=user-menu-btn
     Click Element    id=user-menu-btn

@@ -45,7 +45,7 @@ SignIn-SuperAdmin
     Capture Step Screenshot    admin_login_success
 
     Go To    http://localhost:5173/AdminDashboard
-    Sleep    3s
+    Sleep    2s
 
     Wait Until Element Is Visible    id=user-menu-btn
     Click Element    id=user-menu-btn
@@ -67,11 +67,11 @@ SignIn-SuperAdmin
 Add-SuperAdmin
     Wait Until Element Is Visible    id=add-user-btn
     Click Element    id=add-user-btn
-    Input Text    xpath=//*[@id="add-user-modal"]/div/div[1]/input    Test35
+    Input Text    xpath=//*[@id="add-user-modal"]/div/div[1]/input    Test6
     Input Text    xpath=//*[@id="add-user-modal"]/div/div[2]/input    00035
     Input Text    xpath=//*[@id="add-user-modal"]/div/div[3]/input    00035
     Input Text    xpath=//*[@id="add-user-modal"]/div/div[4]/input    000335
-    Input Text    xpath=//*[@id="add-user-modal"]/div/div[5]/input    Test1245s@gmail.com
+    Input Text    xpath=//*[@id="add-user-modal"]/div/div[5]/input    Test160@gmail.com
     Wait Until Element Is Visible    id=confirm-add-btn
     Click Button    id=confirm-add-btn
 
@@ -80,15 +80,15 @@ Add-SuperAdmin
     Click Element    xpath=//button[contains(@class, 'swal2-confirm')]
 
 Edit-Admin
-    Wait Until Element Is Visible    id=edit-user-6800d48cfe6c453f288a8cc0
-    Click Element    id=edit-user-6800d48cfe6c453f288a8cc0
+    Wait Until Element Is Visible    id=edit-user-6800d4b0fe6c453f288a8ced
+    Click Element    id=edit-user-6800d4b0fe6c453f288a8ced
 
     # กรอกข้อมูล
     Input Text    xpath=//input[@value='Test']    อทิตยาs
     Input Text    xpath=//input[@value='000']    1111111111112
     Input Text    xpath=//input[@value='000']    1234
-    Input Text    xpath=//input[@value='0002']    8888888885
-    Input Text    xpath=//input[@value='Test1@gmail.com']    AsAsdmin@gmail.com
+    Input Text    xpath=//input[@value='0003']    8888888880
+    Input Text    xpath=//input[@value='Test12@gmail.com']    Atitaya@gmail.com
 
     # คลิกปุ่มอัปเดต
     Wait Until Element Is Visible    xpath=//button[text()='Update Admin']
@@ -101,14 +101,13 @@ Edit-Admin
 *** Test Cases ***
 
 TC-003-Edit-SuperAdmin
-    
     Edit-Admin
     
 
 TC-004-delete-SuperAdmin
     
-    Wait Until Element Is Visible    id=delete-user-6800d48cfe6c453f288a8cc0
-    Click Element    id=delete-user-6800d48cfe6c453f288a8cc0
+    Wait Until Element Is Visible    id=delete-user-6800fd7ce317bfd3809a7cd1
+    Click Element    id=delete-user-6800fd7ce317bfd3809a7cd1
     
     Wait Until Element Is Visible    xpath=//div[contains(@class, 'swal2-popup')]
     Element Should Contain    xpath=//h2[contains(@class, 'swal2-title')]    Success

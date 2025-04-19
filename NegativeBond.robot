@@ -52,7 +52,6 @@ SignupIncomplete
     Input Text    id=company-input    Uknowme Asset
     Input Text    id=citizen-id-input    1429900959405
     Input Text    id=email-input    phattarapong@gmail.com
-    Input Text    id=phone-input    0
     Wait Until Element Is Visible    id=submit-signup-btn
     Click Element    id=submit-signup-btn
 
@@ -114,7 +113,7 @@ Profile
 
 Homepage
     Go To    http://localhost:5173/UserHomepage
-    Sleep    3s 
+    Sleep    2s 
 
 *** Test Cases ***
 TCI001-การสมัครสมาชิก(ข้อมูลไม่ครบ)
